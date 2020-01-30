@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name 3003)(type KiCad)(uri ${KIPRJMOD}/3003.pretty)(options "")(descr ""))
+  (lib (name Connector_PinHeader_2.54mm)(type KiCad)(uri "C:/Program Files/KiCad/share/kicad/modules/Connector_PinHeader_2.54mm.pretty")(options "")(descr ""))
+  (lib (name LED_SMD)(type KiCad)(uri "C:/Program Files/KiCad/share/kicad/modules/LED_SMD.pretty")(options "")(descr ""))
+)

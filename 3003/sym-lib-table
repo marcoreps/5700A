@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Switch)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Switch.lib)(options "")(descr ""))
+  (lib (name LED)(type Legacy)(uri "C:/Program Files/KiCad/share/kicad/library/LED.lib")(options "")(descr ""))
+)

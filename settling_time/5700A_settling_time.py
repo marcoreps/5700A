@@ -6,9 +6,9 @@ import logging
 
 VISA_3458A = 'GPIB0::25::INSTR'
 VISA_5700A = 'GPIB0::1::INSTR'
-SECONDS_TO_PREP = 20 
-SECONDS_TO_CAPTURE = 20
-NPLC = 1
+SECONDS_TO_PREP = 60*3
+SECONDS_TO_CAPTURE = 60*3
+NPLC = 10
 VOLTAGE_START = 1.0
 VOLTAGE_STEP = 6.0
 
@@ -69,5 +69,5 @@ def run_settling_test():
 settling_data = run_settling_test()
 df_settle = pd.DataFrame(settling_data, columns=['Elapsed_Time', 'Voltage'])
 timestr = datetime.now().strftime("%Y%m%d-%H%M%S")
-output_filename = "csv/settling_test_"+str(NPLC)+"NPLC_"+timestr+".csv"
+output_filename = "csv/settling_test_"+str(NPLC)+"NPLC_"+""+str(SECONDS_TO_CAPTURE)+"capture_"+timestr+".csv"
 df_settle.to_csv(output_filename, index=False)
